@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Goldman:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Russo+One&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo a {
+    font-family: "Rakkas", serif;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+nav ul li img {
+    width: 40px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    cursor: pointer;
+    width: 23px;
+    background-color: #C7C7C7;
+    padding: 7px 7px;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.search input[type="text"] {
+    margin-right: 60vw;
+    border: none;
+    outline: none;
+    padding: 7px 0px;
+    background-color: #C7C7C7;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.wrt {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.top {
+    gap: 5px;
+    padding: 0 21px;
+    display: flex;
+    align-items: center;
+    margin: 60px 0px 0px 166px;
+    width: 162px;
+    height: 40px;
+    background-color: #E3E3E3;
+    border-radius: 10px;
+}
+.top img{
+    filter: drop-shadow(0 0 10px yellow);
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.main {
+    height: 62vh;
+    width: 75vw;
+    margin: 10px auto
+}
+
+.main h1 {
+    font-size: 2.5rem;
+}
+
+.bttn {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.bttn button {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.bttn img {
+    width: 28px;
+}
+
+#comment-bttn {
+    transition: transform 0.1s ease;
+}
+
+#comment-bttn:active {
+    transform: scale(0.95);
+}
+
+#css {
+    margin-left: 69px;
+    margin-bottom: 5px;
+}
+
+.comment-section {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    width: 28vw;
+    height: 93vh;
+    border-radius: 10px;
+    background-color: #fefefefe;
+    padding: 12px;
+    box-shadow: -7px 7px 19px rgb(0 0 0 / 54%);
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.t {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: #dddddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+#name {
+    margin-bottom: 5px;
+}
+
+textarea{
+    padding: 5px 10px;
+    font-size: 17px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#comment {
+    width: 25vw;
+    margin-bottom: 25px;
+}
+
+.cross {
+    position: relative;
+
+}
+
+.post {
+    margin-left: 20vw;
+    border: none;
+    padding: 5px 27px 5px 27px;
+    background-color: rgb(0, 224, 0);
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.comment-section.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commenting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html">DevIns</a></li>
+            <li class="search"><img src="Assets/Search.svg" alt="Search"><input type="text" name="search" id="find"
+                    placeholder="Search."></li>
+            <li class="wrt"><img src="Assets/Frame.svg" alt="">Write</li>
+            <li><img src="Assets/User.svg" alt=""></li>
+        </ul>
+    </nav>
+    <div class="top"><img src="Assets/Star.svg" alt="">Top Stories</div>
+    <div class="main">
+        <h1>Modern CSS Features That Every Web Developer Should Know</h1>
+        <p id="cap">Creating a user-friendly, attractive web app frontend involves using responsive layouts, smooth
+            transitions, and clean animations for a polished, adaptable design across devices.</p>
+        <div class="bttn">
+            <button id="heartButton"><img src="Assets/Heart.svg" alt=""></button>
+            <button id="comment-bttn"><img src="Assets/Comment.svg" alt=""></button>
+        </div>
+        <img id="css" src="Assets/dummy img.jpg" alt="CSS">
+        <p style="margin-bottom: 27px;">The HTML standard offers semantic tags to create the basic structure of a web
+            page, but it doesn’t provide a
+            fully-featured way to add styles. To address this, web developers use the standard CSS styling language to
+            enhance HTML-structured web pages. In the early days, CSS offered only basic features to improve web pages
+            with simple DOM element positioning, coloring, and modification. Today, however, CSS has evolved to offer
+            more advanced features, such as JavaScript-free animations, Flexbox-based layouts, custom properties
+            (variables), responsive design helpers, and more. These tools enable web developers to create high-quality,
+            user-friendly web apps. Additionally, developer-focused features like nesting, style tag scoping, native
+            form element styling, and cascade layers help developers write more organized CSS stylesheets.
+            Understanding these modern CSS features can help you create user-friendly, futuristic, and high-quality apps
+            productively with highly maintainable CSS definitions. Some CSS features even help reduce app bundle size by
+            eliminating the need for certain third-party JavaScript libraries or scripts.
+            In this post, I’ll explain several modern CSS features that every web developer should know, complete with
+            demo code snippets. Let’s dive in!
+            1. Flexbox and Grid Layouts
+            Flexbox is a powerful layout module that allows you to design complex layouts with ease. It is particularly
+            useful for creating responsive web designs.
+            CSS Grid Layout is another game-changer, providing a two-dimensional layout system for the web. It excels at
+            dividing a page into major regions or defining the relationship between parts of a control built from HTML
+            primitives.
+            2. CSS Variables (Custom Properties)
+            CSS variables allow you to reuse values throughout your stylesheet, making your CSS more maintainable and
+            easier to understand.
+            3. Responsive Design Helpers
+            Media queries enable you to create responsive designs that work on different devices and screen sizes.
+            4. CSS Animations
+            CSS animations allow you to animate the transition of element properties, providing a way to enhance the
+            user experience without relying on JavaScript.
+            5. Nesting (with Preprocessors like SCSS)
+            While CSS itself does not support nesting, preprocessors like SCSS make it possible. This feature can make
+            your CSS more readable and maintainable.
+            6. Style Tag Scoping
+            Scoping styles to specific components or sections of your application helps to avoid style conflicts and
+            maintain cleaner code.
+            7. Cascade Layers
+            Cascade layers allow you to control the specificity of your styles more effectively, making it easier to
+            manage and override styles as needed.
+            Conclusion
+            Modern CSS has come a long way from its humble beginnings. With features like Flexbox, Grid, CSS variables,
+            responsive design helpers, animations, and more, developers can create sophisticated and user-friendly web
+            applications with greater ease and efficiency. By mastering these tools, you’ll be well-equipped to build
+            the next generation of web experiences.
+            Stay tuned for more tips and tricks on leveraging the power of CSS in your projects. Happy coding!</p>
+        <h2>More Stories...</h2>
+    </div>
+    <div class="comment-section" id="comment-section">
+        <div class="t">
+            <h2>Responses</h2>
+            <button class="cross"><img src="Assets/Cross.svg" alt=""></button>
+        </div>
+        <form action="submit">
+            <input type="text" name="name" id="name" placeholder="Your Name"><br>
+            <textarea name="comment" id="comment" placeholder="What are your thoughts"
+                oninput="autoResize(this)"></textarea>
+            <button class="post">Post</button>
+        </form>
+        <h3>Comments:</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
