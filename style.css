@@ -126,6 +126,7 @@ nav ul li img {
 }
 
 .comment-section {
+    overflow: scroll;
     position: fixed;
     top: 0%;
     right: 0;
@@ -139,6 +140,31 @@ nav ul li img {
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0;
     visibility: hidden;
+    
+}
+.comment-section.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.comment-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.comment-section::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.comment-section::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #fefefefe;
+}
+
+.comment-section::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
 
 .t {
@@ -193,10 +219,12 @@ textarea{
     font-size: 18px;
     color: white;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
-.comment-section.active {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
+.post:hover{
+    transform: scale(1.05);
+}
+.post:active{
+    transform: scale(0.95);
 }
