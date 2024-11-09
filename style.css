@@ -228,3 +228,8 @@ textarea{
 .post:active{
     transform: scale(0.95);
 }
+
+#commentsList {
+    list-style-type: none;
+    padding: 0;
+}
