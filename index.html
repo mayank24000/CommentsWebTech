@@ -27,7 +27,7 @@
             <button id="heartButton"><img src="Assets/Heart.svg" alt=""></button>
             <button id="comment-bttn"><img src="Assets/Comment.svg" alt=""></button>
         </div>
-        <img id="css" src="Assets/dummy img.jpg" alt="CSS">
+        <img id="css" src="dummy img.jpeg" alt="CSS">
         <p style="margin-bottom: 27px;">The HTML standard offers semantic tags to create the basic structure of a web
             page, but it doesn’t provide a
             fully-featured way to add styles. To address this, web developers use the standard CSS styling language to
@@ -79,13 +79,15 @@
             <button class="cross"><img src="Assets/Cross.svg" alt=""></button>
         </div>
         <form action="submit">
-            <input type="text" name="name" id="name" placeholder="Your Name"><br>
-            <textarea name="comment" id="comment" placeholder="What are your thoughts"
+            <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+            <textarea name="comment" id="comment" placeholder="What are your thoughts" required
                 oninput="autoResize(this)"></textarea>
             <button class="post">Post</button>
         </form>
         <h3>Comments:</h3>
-        <div class="comment-area"></div>
+        <div class="comment-area">
+            <ul id="commentsList"></ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
