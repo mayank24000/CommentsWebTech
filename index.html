@@ -10,13 +10,16 @@
 
 <body>
     <nav>
-        <ul>
-            <li class="logo"><a href="index.html">DevIns</a></li>
-            <li class="search"><img src="Assets/Search.svg" alt="Search"><input type="text" name="search" id="find"
-                    placeholder="Search."></li>
-            <li class="wrt"><img src="Assets/Frame.svg" alt="">Write</li>
-            <li><img src="Assets/User.svg" alt=""></li>
-        </ul>
+          <div class="navbar">
+        <div class="rgt"><a id="logo" href="index.html">DevIns</a>
+           <div class="search"> <img id="search" src="Assets/Search.svg" alt="Search"><input type="text" name="search" id="find"
+            placeholder="Search."></div>
+        </div>
+        <div class="lft">
+            <img src="Assets/Frame.svg" alt="">
+            <img src="Assets/User.svg" alt="">
+        </div>
+    </div>
     </nav>
     <div class="top"><img src="Assets/Star.svg" alt="">Top Stories</div>
     <div class="main">
@@ -42,30 +45,30 @@
             eliminating the need for certain third-party JavaScript libraries or scripts.
             In this post, I’ll explain several modern CSS features that every web developer should know, complete with
             demo code snippets. Let’s dive in!
-            1. Flexbox and Grid Layouts
+            <h3>1. Flexbox and Grid Layouts</h3>
             Flexbox is a powerful layout module that allows you to design complex layouts with ease. It is particularly
             useful for creating responsive web designs.
             CSS Grid Layout is another game-changer, providing a two-dimensional layout system for the web. It excels at
             dividing a page into major regions or defining the relationship between parts of a control built from HTML
             primitives.
-            2. CSS Variables (Custom Properties)
+            <h3>2. CSS Variables (Custom Properties)</h3>
             CSS variables allow you to reuse values throughout your stylesheet, making your CSS more maintainable and
             easier to understand.
-            3. Responsive Design Helpers
+            <h3>3. Responsive Design Helpers</h3>
             Media queries enable you to create responsive designs that work on different devices and screen sizes.
-            4. CSS Animations
+            <h3>4. CSS Animations</h3>
             CSS animations allow you to animate the transition of element properties, providing a way to enhance the
             user experience without relying on JavaScript.
-            5. Nesting (with Preprocessors like SCSS)
+            <h3>5. Nesting (with Preprocessors like SCSS)</h3>
             While CSS itself does not support nesting, preprocessors like SCSS make it possible. This feature can make
             your CSS more readable and maintainable.
-            6. Style Tag Scoping
+            <h3>6. Style Tag Scoping</h3>
             Scoping styles to specific components or sections of your application helps to avoid style conflicts and
             maintain cleaner code.
-            7. Cascade Layers
+            <h3>7. Cascade Layers</h3>
             Cascade layers allow you to control the specificity of your styles more effectively, making it easier to
             manage and override styles as needed.
-            Conclusion
+            <h3>Conclusion</h3>
             Modern CSS has come a long way from its humble beginnings. With features like Flexbox, Grid, CSS variables,
             responsive design helpers, animations, and more, developers can create sophisticated and user-friendly web
             applications with greater ease and efficiency. By mastering these tools, you’ll be well-equipped to build
