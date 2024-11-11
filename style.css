@@ -142,6 +142,7 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 2;
     
 }
 .comment-section.active {
