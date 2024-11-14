@@ -26,7 +26,7 @@ document.getElementById('comment-section').addEventListener('submit', function(e
     const comment = document.getElementById('comment').value; //it'll find/get the comment typed in comment field
     const timeStamp = new Date().toLocaleString(); //it'll add the "NEW(data)"(as mentioned in the name itself) which means it'll add a date and time string along with the comment and name so basically it just means it's the data other than what the user provided which we have to show
     
-    addCommentToList(name, comment, timeStamp); // it'll add all the three data we got previously in the list we created in index.js 
+    addCommentToList(name, comment, timeStamp); // it'll add all the three data we got previously in the list we created in script.js 
 
     saveCommentToLocalStorage(name, comment, timeStamp); //it'll add our each comment data the is posted into our local storage
 
