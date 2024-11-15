@@ -16,7 +16,10 @@ function autoResize(textarea) {
 // Reload the comments from local storage when the page loads
 window.addEventListener("load", function () {
     const savedComments = JSON.parse(localStorage.getItem("comments")) || []; // Check for comments in local storage
+    savedComments.reverse();
+    console.log(savedComments)
     savedComments.forEach((comment) => {
+        console.log(comment)
         addCommentToList(comment.name, comment.comment, comment.timeStamp); // Add each saved comment to the list
     });
 });
@@ -40,6 +43,7 @@ document.getElementById("comment-section").addEventListener("submit", function (
 function addCommentToList(name, comment, timeStamp) {
     const commentsList = document.getElementById("commentsList");
     const commentItem = document.createElement("li");
+    console.log(name);
     commentItem.innerHTML = `
         <strong>${name}</strong> <i>${timeStamp}</i>:<br>
         ${comment}
@@ -70,6 +74,9 @@ function fetchComments() {
 function loadCommentsWithAJAX() {
     fetchComments().then((comments) => {
         document.getElementById("commentsList").innerHTML = ""; // Clear existing comments
+        console.log("kiru")
+        comments.reverse()
+        console.log(comments)
         comments.forEach((comment) => {
             addCommentToList(comment.name, comment.comment, comment.timeStamp);
         });
